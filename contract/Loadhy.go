@@ -25,8 +25,7 @@ func Load() {
 		log.Fatal(err)
 	}
 
-	//privateKey, err := crypto.HexToECDSA("0e0e0e7978b4997d1dc196c2cd1225e3bdeb3d73e2de72d1facada7583eac461")
-	privateKey, err := crypto.HexToECDSA("1f3f482f640132b41668ab8e17b6dbaebd2dfc754147cdbcad0ba725be5cff69")
+	privateKey, err := crypto.HexToECDSA("==")
 	if err != nil {
 		log.Fatal(err)
 	}

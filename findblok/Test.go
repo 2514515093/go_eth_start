@@ -134,7 +134,7 @@ func findtxtwo() {
 }
 
 func createQb() {
-	privateKey, _ := crypto.HexToECDSA("0e0e0e7978b4997d1dc196c2cd1225e3bdeb3d73e2de72d1facada7583eac461")
+	privateKey, _ := crypto.HexToECDSA("==")
 	privateKeyBytes := crypto.FromECDSA(privateKey)
 	fmt.Println(hexutil.Encode(privateKeyBytes)[2:]) // 去掉'0x'
 	publicKey := privateKey.Public()
